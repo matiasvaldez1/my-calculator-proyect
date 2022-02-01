@@ -12,6 +12,7 @@ export const ACTIONS = {
 }
 
 function reducer(state, { type, payload }) {
+  // eslint-disable-next-line
   switch (type) {
     case ACTIONS.ADD_DIGIT:
       if (payload.digit === 0 && state.currentOperand === 0) {
@@ -51,6 +52,7 @@ function reducer(state, { type, payload }) {
         operation: payload.operation,
         currentOperand: null,
       }
+      // eslint-disable-next-line
       return {
         ...state,
         previousNumber: evaluate(state),
@@ -90,6 +92,7 @@ function evaluate({ currentOperand, previousNumber, operation }) {
   const prev = parseFloat(previousNumber)
   const current = parseFloat(currentOperand)
   if (isNaN(prev) || isNaN(current)) return ""
+  // eslint-disable-next-line
   let computation: ""
   switch (operation) {
     case "+":
