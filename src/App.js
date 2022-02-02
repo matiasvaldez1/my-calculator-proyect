@@ -52,7 +52,7 @@ function reducer(state, { type, payload }) {
         currentOperand: null,
       }
       default:
-      case return {
+        return {
         ...state,
         previousNumber: evaluate(state),
         operation: payload.operation,
