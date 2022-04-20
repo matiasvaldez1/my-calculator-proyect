@@ -1,1 +1,1 @@
-En esta app use el hook useReducer para poner en practica mis conocimientos en React y Redux de manera simultanea asi como tambien el clasico useState. A su vez agregue todos los estilos en un solo archivo css ya que, al ser una single web aplication no necesitó demasiados. 
+En esta app use el hook useReducer para poner en practica mis conocimientos en React y Redux de manera simultanea asi como tambien el clasico useState.
